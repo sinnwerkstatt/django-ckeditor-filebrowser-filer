@@ -21,10 +21,7 @@
 			base_static = editor.plugins.filerimage.path + '../../../..',
 			base_admin = editor.base_admin,
 			nofile_icon = base_static + '/filer/icons/nofile_48x48.png';
-		if (editor.filer_version < 1.2)
-			var picker = 't=file_ptr';
-		else
-			var picker = '_pick=file';
+		var picker = '_pick=file';
 
 		var standard_items = [
 			{
@@ -39,7 +36,7 @@
 						'<img style="width: 36px"; width="36" height="36" alt="' + lang.noFileAlt + '" class="quiet" src="' + nofile_icon + '" id="id_image' + idSuffix + '_thumbnail_img">' +
 						'&nbsp;<span id="id_image' + idSuffix + '_description_txt" class="description_text"></span>' +
 						'<a onclick="return showRelatedObjectLookupPopup(this);" title="' + lang.browse +'" id="lookup_id_image' + idSuffix + '" ' +
-							'data-id="id_image' + idSuffix + '" class="related-lookup js-related-lookup" href="' + base_admin + '/filer/folder/last/?_pick=file&' + picker+ '">' +
+							'data-id="id_image' + idSuffix + '" class="related-lookup js-related-lookup" href="' + base_admin + '/filer/folder/last/?' + picker+ '">' +
 							'<img width="16" height="16" alt="' + lang.browse +'" src="' + base_static + '/admin/img/icon_searchbox.png">' +
 						'</a>' +
 						'<img width="10" height="10" title="' + lang.clear + '" alt="' + lang.clear + '" src="' + base_static + '/admin/img/icon_deletelink.gif" id="id_image' + idSuffix + '_clear">' +
