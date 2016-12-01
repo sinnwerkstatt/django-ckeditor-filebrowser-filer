@@ -39,7 +39,7 @@
 						'<img style="width: 36px"; width="36" height="36" alt="' + lang.noFileAlt + '" class="quiet" src="' + nofile_icon + '" id="id_image' + idSuffix + '_thumbnail_img">' +
 						'&nbsp;<span id="id_image' + idSuffix + '_description_txt" class="description_text"></span>' +
 						'<a onclick="return showRelatedObjectLookupPopup(this);" title="' + lang.browse +'" id="lookup_id_image' + idSuffix + '" ' +
-							'data-id="id_image' + idSuffix + '" class="related-lookup js-related-lookup" href="' + base_admin + '/filer/folder/last/?' + picker+ '">' +
+							'data-id="id_image' + idSuffix + '" class="related-lookup js-related-lookup" href="' + base_admin + '/filer/folder/last/?_pick=file&' + picker+ '">' +
 							'<img width="16" height="16" alt="' + lang.browse +'" src="' + base_static + '/admin/img/icon_searchbox.png">' +
 						'</a>' +
 						'<img width="10" height="10" title="' + lang.clear + '" alt="' + lang.clear + '" src="' + base_static + '/admin/img/icon_deletelink.gif" id="id_image' + idSuffix + '_clear">' +
